@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -414,18 +414,6 @@ uC used in the Arduino&lt;br&gt;
 </library>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">
 <packages>
-<package name="1X2-3.5MM" urn="urn:adsk.eagle:footprint:6239989/1" library_version="2">
-<wire x1="-3.4" y1="3.4" x2="-3.4" y2="-2.2" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="-2.2" x2="-3.4" y2="-3.6" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="-3.6" x2="3.6" y2="-3.6" width="0.127" layer="21"/>
-<wire x1="3.6" y1="-3.6" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
-<wire x1="3.6" y1="-2.2" x2="3.6" y2="3.4" width="0.127" layer="21"/>
-<wire x1="3.6" y1="3.4" x2="-3.4" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="-2.2" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
-<pad name="1" x="1.8" y="0" drill="1" diameter="2.1844"/>
-<pad name="2" x="-1.7" y="0" drill="1" diameter="2.1844"/>
-<text x="3" y="5" size="1.27" layer="25" rot="R180">&gt;NAME</text>
-</package>
 <package name="R0402" urn="urn:adsk.eagle:footprint:6239918/1" library_version="2">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 chip</description>
@@ -7052,11 +7040,6 @@ diameter 5 mm, grid 2.54 mm</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="1X2-3.5MM" urn="urn:adsk.eagle:package:6240635/1" type="box" library_version="2">
-<packageinstances>
-<packageinstance name="1X2-3.5MM"/>
-</packageinstances>
-</package3d>
 <package3d name="R0402" urn="urn:adsk.eagle:package:6240564/1" type="box" library_version="2">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 chip</description>
@@ -8745,14 +8728,6 @@ diameter 5 mm, grid 2.54 mm</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="1X2" urn="urn:adsk.eagle:symbol:6239476/1" library_version="2">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle" direction="pas"/>
-<pin name="2" x="-5.08" y="0" visible="pin" length="middle" direction="pas"/>
-</symbol>
 <symbol name="R-US" urn="urn:adsk.eagle:symbol:6239479/1" library_version="2">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
 <wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
@@ -8832,27 +8807,6 @@ diameter 5 mm, grid 2.54 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="1X2" urn="urn:adsk.eagle:component:6240975/1" prefix="J" library_version="2">
-<description>3.5mm Terminal block
-&lt;p&gt;http://www.ladyada.net/library/pcb/eaglelibrary.html&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="1X2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-3.5MM" package="1X2-3.5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240635/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="R-US_" urn="urn:adsk.eagle:component:6240979/1" prefix="R" uservalue="yes" library_version="2">
 <description>&lt;B&gt;RESISTOR&lt;/B&gt;, American symbol</description>
 <gates>
@@ -13741,7 +13695,7 @@ part number 2062-2P from STA</description>
 <part name="3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="0204/5" package3d_urn="urn:adsk.eagle:package:6240595/1"/>
 <part name="JP1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:6240711/1"/>
 <part name="JP2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:6240711/1"/>
-<part name="J2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="1X2" device="-3.5MM" package3d_urn="urn:adsk.eagle:package:6240635/1"/>
+<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="3.5MM" package3d_urn="urn:adsk.eagle:package:38050/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -13757,7 +13711,10 @@ part number 2062-2P from STA</description>
 <instance part="IC1" gate="A" x="-33.02" y="88.9" smashed="yes">
 <attribute name="NAME" x="-27.94" y="96.52" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="J1" gate="G$1" x="-35.56" y="119.38" smashed="yes" rot="R90"/>
+<instance part="J1" gate="G$1" x="-35.56" y="119.38" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-30.734" y="116.84" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="-41.148" y="116.84" size="1.778" layer="95" font="vector" rot="R90"/>
+</instance>
 <instance part="Y1" gate="G$1" x="10.16" y="53.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.128" y="53.34" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="12.192" y="53.34" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
@@ -13877,7 +13834,7 @@ part number 2062-2P from STA</description>
 <attribute name="NAME" x="123.19" y="28.575" size="1.778" layer="95"/>
 <attribute name="VALUE" x="123.19" y="7.62" size="1.778" layer="96"/>
 </instance>
-<instance part="J2" gate="G$1" x="198.12" y="165.1" smashed="yes" rot="R270"/>
+<instance part="J2" gate="G$1" x="200.66" y="165.1" smashed="yes" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -14328,14 +14285,14 @@ part number 2062-2P from STA</description>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="170.18" x2="200.66" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="172.72" x2="200.66" y2="175.26" width="0.1524" layer="91"/>
 <label x="200.66" y="175.26" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PHASE" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="170.18" x2="198.12" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="172.72" x2="198.12" y2="182.88" width="0.1524" layer="91"/>
 <label x="198.12" y="182.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
